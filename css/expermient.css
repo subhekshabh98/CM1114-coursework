@@ -1,0 +1,38 @@
+body {
+    background-color: white;
+}
+main {
+    background-color: white;
+}
+aside {
+    background-color: white;
+}
+footer{
+    background-color: white;
+}
+nav div a {
+    border: 2px solid black;
+    background-color: whitesmoke;
+}
+nav li a{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+nav li hover{
+    background-color: lightcyan;
+}
+.active{
+    background-color: black;
+}
+h1{
+    border: 10px;
+    height: 50px;
+    width: 50px;
+    float: left;
+    margin-right: 10px;
+    font-family: Verdana ;
+    color: black;
+    font-size: larger;
+    display: inline;
+}
