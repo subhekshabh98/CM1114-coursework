@@ -1,33 +1,69 @@
 <html>
     <head>
         <title> Laboratory </title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
         <link rel ='stylesheet' href = 'css/main.css'>
+        <script src="scripts/script.js"></script>
     </head>
 
     <body>
-        
-        <h1> Forensic Science Lab </h1>
-        <link rel ='stylesheet' href = 'css/main.css'>
-        <script src="scripts/script.js"></script>
+        <div class="header">
+            
+
+            <nav id = "navbar"> 
+                <header> <img src="images/10.png" class="logo"> <h1>Forensic Science Lab </h1></header> <br/>
+            <br/>
+                <u1 id = "menu">
+                    <li class="active"><a href="index.html">Home</a></li>   
+                    <li><a href="img_gallery.html">Gallery</a></li>    
+                    <li><a href="current_membership.html">Current Members</a></li> 
+                    <li><a href="event_calendar.html">Events</a></li>      
+                    <li><a href="contact_us.html">Contact Us</a></li>
+                    <li><a href="technologies.html">Technology</a></li> 
+                    <li><a href="forensic.html">Roles</a></li>      
+                    <li><a href="uses.html">Uses</a></li>
+                </u1>
+            </nav>
+
+        </div>
         
         <form>
-            <fieldset>
-                <legend> Contact us. </legend>
-                <label for = "name"> Name: </label> 
-                <input type = "text" name = "name" value =""/> <br/>
-                <label for ="email"></label> Email: </label>
-                <input type = "text" email = "email" value =""/> <br/>
-                <label for ="membership"></label> Membership Status : </label>
-                <input type = "radio" id = "Member" value=""  Member /> 
-                <label for ="member"></label> Member </label>
-                <input type = "radio" id = "Non-Member" value="" Non-Member/>
-                <label for ="non-member"></label> Non-Member </label> <br/> 
-                <label for ="comments"></label> Comments: </label>
-                <input type = "text" comments = "comments" value =""/> <br/>
-                <label for ="Attach a file"></label> Attach a File: </label>
-                <input type = "file" Attach a file = "" value =""/> <br/>
-            </fieldset>
+            <div class = "row">
+                <div class = "column" style = "background-color: whitesmoke;">
+                    <h1> Contact Us </h1> <br/>
+
+                    <br/>
+                    <p>Use the form below, or follow us on social media.</p>
+                    <fieldset>
+                        <label for = "name"> Name: </label> 
+                        <input type = "text" name = "name" value =""/> <br/>
+                        <label for ="email"></label> Email: </label>
+                        <input type = "text" email = "email" value =""/> <br/>
+                        <label for ="membership"></label> Membership Status : </label>
+                        <input type = "radio" id = "Member" value=""  Member /> 
+                        <label for ="member"></label> Member </label>
+                        <input type = "radio" id = "Non-Member" value="" Non-Member/>
+                        <label for ="non-member"></label> Non-Member </label> <br/> 
+                        <label for ="comments"></label> Comments: </label>
+                        <input type = "text" comments = "comments" value =""/> <br/>
+                        <label for ="Attach a file"></label> Attach a File: </label>
+                        <input type = "file" Attach a file = "" value =""/> <br/>
+                        <button type="button"onclick='document.getElementById("form_outcome").innerHTML="Form has been sent successfully!"'>Submit</button>
+                        <p id="form_outcome"></p>
+                    </fieldset>
+                </div>
+                <div class = "column" style = "background-color: whitesmoke;">
+                    <h1></h1>
+                </div>
+        </div>
         </form>
+
+        <aside> 
+            <h3><a href= 'https://twitter.com/elsforensics?lang=en'>Latest News</a></h3>
+        </aside> <br/>
+
+        <footer> Copyright Subheksha Bhetuwal <br/> 2023 </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 
     </body>
 

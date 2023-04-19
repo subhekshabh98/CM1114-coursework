@@ -1,43 +1,121 @@
 <html>
     <head>
         <title> Laboratory </title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
         <link rel ='stylesheet' href = 'css/main.css'>
         <script src="scripts/script.js"></script>
     </head>
 
     <body>
-        
-        <h1> Forensic Science Lab </h1>
+        <div class="header">
+
+            <nav id = "navbar"> 
+                <header> <img src="images/10.png" class="logo"> <h1>Forensic Science Lab </h1></header> <br/>
+            <br/>
+                <u1 id = "menu">
+                  <li class="active"><a href="index.html">Home</a></li>   
+                  <li><a href="img_gallery.html">Gallery</a></li>    
+                  <li><a href="current_membership.html">Current Members</a></li> 
+                  <li><a href="event_calendar.html">Events</a></li>      
+                  <li><a href="contact_us.html">Contact Us</a></li>
+                  <li><a href="technologies.html">Technology</a></li> 
+                  <li><a href="forensic.html">Roles</a></li>      
+                  <li><a href="uses.html">Uses</a></li>
+                </u1>
+            </nav>
+
+        </div>
+
         <table>
             <tr>
             <td></td><th>Monday</th><th>Tuesday</th><th>Wednesday</th><th>Thursday</th>
             <th>Friday</th><th>Saturday</th><th>Sunday</th>
             </tr>
             <tr>
-            <th>Week1</th><td>Meeting</td><td></td><td></td><td>Data collection</td><td></td><td></td><td></td>
+            <th>Week1</th><td>Meeting </br> In-person @ conference room </td></td><td></td><td></td><td></td><td>Data collection</br> In-person @ forensic lab</td><td></td><td></td>
             </tr>
             <tr>
-            <th>Week 2</th><td></td><td></td><td>Profiling</td><td></td><td></td><td>Case Study</td><td></td>
+            <th>Week 2</th><td></td><td></td><td>Profiling </br> In-person @ station</td><td></td><td></td><td></td><td></td>
             </tr>
             <tr>
-            <th>Week 3</th><td>Conference</td><td></td><td></td><td>Forensic Examination</td><td></td><td></td><td></td>
+            <th>Week 3</th><td></td><td></td><td></td><td></td><td></td><td>Conference </br> Online @ Meet</td><td></td>
             </tr>
             <tr>
-            <th>Week 4</th><td></td><td>Award Function</td><td></td><td></td><td></td><td></td><td>Tribute</td>
+            <th>Week 4</th><td></td><td>Award Function </br> In-person @ hall</td><td></td><td></td><td></td><td></td><td></td>
             </tr>      
             <tr>
-            <th>Week 5</th><td>Training</td><td></td><td>Case Study</td><td></td><td></td><td></td><td></td>
+            <th>Week 5</th><td></td><td></td><td>Case Study</br> In-person @ field</td><td></td><td></td><td></td><td></td>
             </tr>             
             <tr>
-            <th>Week 6</th><td></td><td>Evidence Recheck</td><td></td><td></td><td>Field Study</td><td></td><td></td>
+            <th>Week 6</th><td>Evidence Recheck </br> In-person @ lab</td><td></td><td></td><td>Field Study </br> In-person @ crime scene</td><td> </td><td></td><td></td>
             </tr>     
             <tr>
-            <th>Week 7</th><td></td><td>Recirculation</td><td></td><td></td><td></td><td></td><td>Court Case</td>
+            <th>Week 7</th><td></td><td>Recirculation </br> Online @ Meet</td><td></td><td></td><td></td><td></td><td>Court Case </br> In-person @ court</td>
             </tr>
             <tr>
-            <th>Week 8</th><td>DNA testing</td><td></td><td></td><td></td><td></td><td>Detection</td><td></td>
+            <th>Week 8</th><td></td><td></td><td></td><td></td><td>DNA testing</br> In-person @ crime scene</td><td></td><td></td>
+            </tr>
+            <tr>
+            <th>Week 9</th><td></td><td></td><td></td><td>Murder Enquiry</br> In-person @ bureau</td><td></td><td></td><td></td>
             </tr>  
+            <tr>
+            <th>Week 10</th><td>Detection </br> In-person @ lab</td><td></td><td></td><td></td><td></td><td></td><td></td>
+            </tr> 
+            <tr>
+            <th>Week 11</th><td></td><td></td><td></td><td></td><td></td><td></td><td>Training</br> In-person @ field</td>
+            </tr> 
+            <tr>
+            <th>Week 12</th><td></td><td></td><td></td><td></td><td>Forensic Examination</br> In-person @ Forensic lab</td><td></td><td></td>
+            </tr> 
         </table>
+        <main>
+          <table>
+                <thead>
+                  <tr>
+                    <th>Event Name</th>
+                    <th>Location</th>
+                    <th>Date</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Forensic Science Conference</td>
+                    <td>Grand Hotel</td>
+                    <td>2023-06-10</td>
+                  </tr>
+                  <tr>
+                    <td>Crime Scene Investigation Workshop</td>
+                    <td>Police Academy</td>
+                    <td>2023-07-15</td>
+                  </tr>
+                  <tr>
+                    <td>Forensic Entomology Seminar</td>
+                    <td>University Auditorium</td>
+                    <td>2023-08-20</td>
+                  </tr>
+                </tbody>
+              </table>
+          
+            <p>Want to recommend an event? Tell us below!</p>
+          
+            <form name="events">
+              <label for="event_title">Event Title:</label>
+              <input type="text" id="event_title" name="event_title" valuer="Enter event title">
+          
+              <label for="event_date">Event Date:</label>
+              <input type="date" id="event_date" name="event_date">
+          
+              <button type="submit" onclick="">Submit Event</button>
+            </form>
+          
+        </main>
+        <script>
+            
+            </script>
+      
+      <footer> Copyright Subheksha Bhetuwal <br/> 2023 </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 
     </body>
 
